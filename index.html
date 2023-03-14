@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Build me a nice looking website where people can calculate their tip at a restaurant-->
+    <div class="bg-body-tertiary sticky-nav">
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
+            <img
+              class="calc--logo navbar-brand"
+              src="images/calc-logo.png"
+              alt="logo"
+            />
+            <a class="navbar-brand" href="#"><strong>Tip Calculator</strong></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#section1">Calculation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section2">Tourism</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section3">Formula</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--End of Nav-->
+    <div class="background-style">
+      <div class="container text-center calc-container">
+        <h1 id="section1" class="header display-3">Calculate your Tip!</h1>
+        <!--Row for tip calculation-->
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+              <span
+                class="input-group-text bill--amount--text"
+                id="inputGroup-sizing-default"
+                >Bill Amount</span
+              >
+              <input
+                type="text"
+                class="form-control bill--amount"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Tip Percentage</span
+              >
+              <input
+                type="text"
+                class="form-control tip--percentage"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Number of People</span
+              >
+              <input
+                type="text"
+                class="form-control people"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+
+            <div class="d-grid gap-1">
+              <button class="btn btn-primary calc" type="button">
+                Calculate
+              </button>
+            </div>
+          </div>
+          <!--End of collumn 1-->
+          <!--Start of collumn 2-->
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Tip Amount</span
+              >
+              <input
+                type="text"
+                class="form-control tip--amount"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Total Bill</span
+              >
+              <input
+                type="text"
+                class="form-control total--bill"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Per Person</span
+              >
+              <input
+                type="text"
+                class="form-control per--person"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+
+            <div id="section2" class="d-grid gap-1">
+              <button class="btn btn-secondary reset btn-2" type="button">
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Row for tip calculation-->
+    <article class="container">
+      <h3 class="display-5 article-header text-center">Are you abroad?</h3>
+      <h4 class="article-subheading text-center">
+        Read the article below to see where to tip.
+      </h4>
+      <div class="row">
+    <div class="col-md-6">
+      <h5 class="display-6">Tipping in Europe In a nutshell:</h5>
+      <p>
+        Leaving larger tips of <strong>15-20%</strong> is unnecessary and
+        sometimes considered ignorant since many countries within the European
+        Union already have laws in place to accommodate gratuity. In an effort
+        to do away with tipping politics, the Netherlands requires
+        establishments to include tips to their published prices. However, it’s
+        common for people to still leave a small tip of about
+        <strong>5-10%</strong> for good service, called fooi in Dutch. Other EU
+        countries which generally add a service charge to the bill include the
+        Czech Republic, France, Hungary, Spain, and Sweden. In these countries,
+        tipping is not customary, but considered a generous act in exchange for
+        exceptional service. Germany, Ireland, Portugal, and the United Kingdom
+        do not have a strong tipping culture so leaving gratuity is up to you.
+        The rule of thumb is to leave a <strong>5-10%</strong> tip unless a
+        charge is included in the bill or the service is really bad. Drivers and
+        bartenders in these countries don’t usually expect gratuity, but
+        rounding up the bill is always appreciated. In Austria, Italy, and
+        Russia, tipping isn’t regularly practiced, but it’s also common for
+        people to generously round up the bill since wages are so low. Some
+        tourist areas in Italy will add coperto, meaning a “cover charge,” to
+        the bill, but this gratuity isn’t always shared with the staff – so, if
+        you do wish to tip in Italy, leave cash to make sure the server actually
+        receives it. <br>
+        <span class="p-style">
+          FUN FACT:In Germany, the word for tip is trinkgeld, which translates
+          to “drinking money”; in France, the word for tip is pourboire, which
+          similarly means “to have a drink”.</span
+        >
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h5 class="display-6">Tipping in the Americas In a nutshell:</h5>
+      <p>
+        Throughout North, Central, and South America, it is customary to leave
+        gratuity since tips can be a substantial part of a server’s income. If
+        you’re from the United States, you’re probably familiar with the
+        unspoken rule of tipping: the better you tip, the better service you’ll
+        receive next time you come back. Trip Advisor recommends adding
+        <strong>15-20%</strong>
+        to the restaurant bill; same for taxis. Similar to the U.S., patrons in
+        Canada and Colombia also tip staff <strong>15-20%</strong>. In
+        Argentina, Mexico, Nicaragua, and Peru, servers are used to a little
+        less, with <strong>10-15%</strong> gratuity being the norm. Most
+        restaurants in Brazil, Chile, and Costa Rica include a
+        <strong>10%</strong> sit-down charge to the bill (referred to as a
+        cubierto in Chile). In these cases, no one expects a tip but feel free
+        to put down an extra <strong>5-10%</strong> in cash since the servers
+        might not receive their share. <br />
+        <span class="p-style">
+          TIP: If you do leave a tip in Brazil, make sure to be discreet since
+          Brazilians are very subtle when it comes to business
+          transactions.</span
+        >
+      </p>
+    </div>
+      <div class="col-md-6">
+      <h5 class="display-6">
+        Tipping in the Middle East & Parts of Africa In a nutshell:
+      </h5>
+      <p>
+        Similar to the Americas, tipping is customary and expected by servers in
+        Africa and the Middle East. The amount varies by restaurant and economic
+        state of the country. In Qatar, Saudi Arabia, and the United Arab
+        Emirates, servers are used to receiving a <strong>15-20%</strong> tip.
+        Even in cities like Dubai, which requires a 10% service charge be added
+        to the bill, restaurant workers expect an additional
+        <strong>15-20%</strong> gratuity for their efforts. In African countries
+        like Jordan, Morocco, and South Africa, wait staff will expect at least
+        <strong>10-15%</strong> tip. Nicer restaurants in popular tourism
+        countries like Egypt and Israel will also add a service charge to the
+        bill so keep an eye out to prevent double tipping. <br>
+        <span class="p-style"
+          >FUN FACT: In Iranian culture, gifts mean a lot more than monetary
+          compensation. Travelers are encouraged to express their appreciation
+          at hotels with a small gift from their country.</span
+        >
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h4 class="display-6">
+        Tipping in East Asia & the South Pacific In a nutshell:
+      </h4>
+      <p>
+        Outside of tourist areas, countries in East Asia and the South Pacific
+        do not have much of a tipping culture so gratuity is not expected and
+        may even be turned down. In China, Myanmar, Singapore, and Taipei,
+        tipping is deemed unnecessary; however, a few trendy restaurants in
+        China are starting to accept tips, so who knows what the future holds?
+        Other Asian countries, like Japan and Nepal, strictly believe good
+        service is simply part of life, so tipping should only reward good
+        service. In Japan, some servers might even politely refuse your tip. Due
+        to an influx of tourism, countries like Cambodia, Indonesia, Thailand,
+        Vietnam, and parts of Turkey are becoming more open to receiving tips;
+        however, tipping is still not considered customary, so it’s not a faux
+        pas if you don’t leave one. In Australia and New Zealand, servers and
+        drivers also don’t expect tips, but appreciate it if you round up the
+        bill.
+      </p>
+    </div>
+    <div class="col-md-12">
+      <h4 class="display-6">When in Doubt…</h4>
+      <p>
+        Tipping customs can change as tourism shapes cultural norms and wage
+        laws change. If you find yourself unsure whether or not to tip, ask your
+        server if tipping is customary. If it doesn’t feel appropriate to ask,
+        simply round up the bill. There’s nothing wrong with bringing a little
+        of your culture to the table by leaving something behind to show your
+        gratitude. And who knows, you might be making someone’s day!
+      </div>
+      </p>
+    </div>
+    </article>
+    <div class="formula-bg">
+      <div class="container formula-container">
+        <h2 id="section3" class="display-4 text-center formula-header">Formula Calculation</h2>
+        <h3 class="text-center">
+          Follow the steps below
+          <small class="text-muted">to calculate on your own.</small>
+        </h3>
+        <div class="container">
+          <div class="row">
+            <!--Collumn 1-->
+            <div class="col-md-4 col-formula">
+              <h4 class="display-6">Step 1:</h4>
+              <h3 class="text-start">
+                Divide the bill amount by 100
+                <small class="text-muted"
+                  >and then times the result by the tip percentage</small
+                >
+              </h3>
+              <h4 class="calc-style">$120 / 100 * 20</h4>
+              <h4 class="calc-style">= $24</h4>
+            </div>
+            <!--End of Collumn 1-->
+            <!--Collumn 2-->
+            <div class="col-md-4 col-formula">
+              <h4 class="display-6 display-6-style">Step 2:</h4>
+              <h3 class="text-start">
+                Add up the tip amount
+                <small class="text-muted"> with the bill Amount</small>
+              </h3>
+              <h4 class="calc-style">$24 + $120</h4>
+              <h4 class="calc-style">= $144</h4>
+            </div>
+            <div class="col-md-4 col-formula">
+              <h4 class="display-6 display-6-style">Step 3:</h4>
+              <h3 class="text-start">
+                Devide the total bill
+                <small class="text-muted"> with the amount of people</small>
+              </h3>
+              <h4 class="calc-style">$144 / 3</h4>
+              <h4 class="calc-style">= $48</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

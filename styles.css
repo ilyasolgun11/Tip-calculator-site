@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@500&family=Rampart+One&family=Rubik&family=Tilt+Warp&display=swap");
+
+:root {
+  --gradient: linear-gradient(to right, #009dff, #79aaff, #002ba1, #040083);
+  --gradient-2: linear-gradient(to right, #8e8e8e, #c6c6c6, #6c6c6c, #2b2b2b);
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-top: 19px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.sticky-nav {
+  z-index: 30;
+  top: 0px;
+  position: sticky;
+}
+
+.btn {
+  border: none;
+  background-image: var(--gradient);
+  margin-bottom: 25px;
+  background-size: 400%;
+}
+
+.btn:hover {
+  animation: bg-animation 0.8s infinite alternate;
+}
+
+.btn-2 {
+  border: none;
+  background-image: var(--gradient-2);
+  margin-bottom: 25px;
+  background-size: 400%;
+}
+
+.btn-2:hover {
+  animation: bg-animation 0.8s infinite alternate;
+}
+
+.calc-style {
+  border-radius: 5px;
+  padding: 5px 3px;
+  background-color: #f2f2f2;
+}
+
+.background-style {
+  padding-bottom: 30px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(244, 244, 244),
+    rgb(238, 238, 238)
+  );
+  padding-top: 40px;
+}
+
+.col-formula {
+  border-left: 2px solid rgb(162, 162, 162);
+}
+
+.col-formula:nth-last-of-type(3) {
+  border: none;
+}
+
+.formula-container {
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.formula-bg {
+  background-image: linear-gradient(
+    180deg,
+    rgb(244, 244, 244),
+    rgb(255, 255, 255)
+  );
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.p-style {
+  color: rgb(0, 19, 189);
+}
+
+.calc--logo {
+  padding-right: 0px;
+  width: 50px;
+}
+
+.article-header {
+  font-size: 3rem;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.article-subheading {
+  font-size: 1.5rem;
+  color: #5b5b5b;
+  margin-bottom: 30px;
+}
+
+.header {
+  color: black;
+  font-family: "Golos Text", sans-serif;
+}
+
+.display-4 {
+  margin-top: 30px;
+  font-family: "Golos Text", sans-serif;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.display-6 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+  svg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .col--style {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .display-6-style {
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .col-formula {
+    border: none;
+  }
+}
